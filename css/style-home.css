@@ -1,0 +1,101 @@
+#sobre, #especialidades, #contato {
+    padding: 2.5rem 1.25rem 0rem;
+}
+
+.box-visao-geral {
+  position: relative;
+  background-image: url('../assets/recepcao.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+
+.box-visao-geral-titulo{
+  height: 100%;
+  color: #fff;
+  padding: 0.625rem;
+  display: flex;
+  align-items: center;
+}
+
+.box-visao-geral h1 {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.box-sobre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-sobre h3 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.box-sobre img {
+  height: 15.625rem;
+}
+
+.box-especialidades {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-especialidade{
+  border-radius: 3px;
+  box-shadow: 0px 1px 10px rgb(0 0 0 / 50%);
+  margin: 20px;
+  width: calc(100% / 3 - 2.5rem);
+}
+
+.box-especialidade img {
+  width: 100%;
+}
+
+.box-especialidade figcaption {
+  text-align: center;
+  padding: 0.625rem;
+  text-transform: uppercase;
+}
+
+.box-link-horarios {
+  text-align: center;
+  margin-top: 1.25rem;
+}
+
+.link-horarios {
+  background-color: #00cad1;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.625rem 1.25rem;
+  text-decoration: none;
+}
+
+/* Medias Queries */
+
+@media (max-width: 1024px) {
+  .box-visao-geral { height: 25rem;}
+}
+
+@media (max-width: 768px) {
+  .box-visao-geral { height: 18.75rem;}
+  .box-sobre img { display: none;}
+  .box-especialidades {justify-content: center;}
+  .box-especialidade {
+    width: calc(100% / 2 - 2.5rem);
+  }
+}
+
+@media (max-width: 425px) {
+  .box-visao-geral { height: 12.5rem;}
+  .box-visao-geral h1 { font-size: 1.75rem;}
+  .box-especialidade {
+    width: 100%;
+  }
+}
